@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102a43"/><stop offset="1" stop-color="#1f587b"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe29a"/><stop offset="1" stop-color="#d99a2b"/></linearGradient></defs>
+<circle cx="110" cy="110" r="103" fill="url(#g)"/><circle cx="110" cy="110" r="91" fill="none" stroke="url(#gold)" stroke-width="3"/>
+<path d="M58 93 L76 63 Q80 57 86 63 L103 83 L120 63 Q126 57 131 63 L151 93 L145 143 Q144 151 136 151 H74 Q66 151 65 143Z" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+<path d="M70 101 H150 M77 114 H143" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+<text x="110" y="129" font-family="Arial,sans-serif" font-size="25" font-weight="900" text-anchor="middle" fill="#fff">AT</text>
+<text x="110" y="170" font-family="Arial,sans-serif" font-size="16" font-weight="900" letter-spacing="2" text-anchor="middle" fill="#fff">ASHIQ</text>
+<text x="110" y="185" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="3" text-anchor="middle" fill="#ffe29a">TRADLINK</text></svg>
