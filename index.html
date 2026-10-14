@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="ASHIQ TRADLINK wholesale bakery ordering catalogue.">
+  <title>ASHIQ TRADLINK | Wholesale Orders</title>
+  <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="ASHIQ TRADLINK home">
+        <img src="assets/images/logo/logo.svg" alt="" class="brand-logo">
+        <span><strong>ASHIQ</strong><small>TRADLINK</small></span>
+      </a>
+      <div class="header-actions">
+        <label class="search-box" aria-label="Search products">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search products..." autocomplete="off">
+        </label>
+        <button class="icon-btn" id="menuButton" aria-label="Open settings menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <div class="settings-popover hidden" id="settingsMenu">
+      <div class="popover-head"><strong>Quick settings</strong><button class="tiny-close" id="closeMenu" aria-label="Close">×</button></div>
+      <label class="setting-row">Theme
+        <select id="themeSelect"><option value="light">Light</option><option value="dark">Dark</option></select>
+      </label>
+      <label class="setting-row">Card colour
+        <select id="cardColorSelect">
+          <option value="orange">Orange</option><option value="blue">Blue</option><option value="green">Green</option><option value="yellow">Yellow</option><option value="red">Red</option>
+        </select>
+      </label>
+      <p class="muted small">More business information is available under View More.</p>
+    </div>
+
+    <nav class="quick-nav" aria-label="Quick navigation">
+      <label class="language-control"><span>Language</span>
+        <select id="languageSelect" aria-label="Language"><option value="en">EN</option><option value="hi">HI</option></select>
+      </label>
+      <button data-more="contact">Contact</button>
+      <button data-more="social">Social Links</button>
+      <button data-more="about">About Site</button>
+      <button data-more="developer">Developer</button>
+      <button data-more="more">More</button>
+    </nav>
+
+    <main id="homeView">
+      <section class="banner-wrap" aria-label="Promotional offers">
+        <div class="banner-track" id="bannerTrack">
+          <article class="promo-banner promo-one">
+            <div class="promo-copy"><span class="eyebrow">WELCOME OFFER</span><h1>₹50 KA BREAD FREE!</h1><p>₹1,000 ka samaan pehli baar lene par</p></div>
+            <div class="promo-art" aria-hidden="true">🍞<span>₹50</span></div>
+          </article>
+          <article class="promo-banner promo-two">
+            <div class="promo-copy"><span class="eyebrow">SPECIAL SAVINGS</span><h1>2% OFF</h1><p>₹2,000 se zyada ke samaan par</p></div>
+            <div class="promo-art" aria-hidden="true">🏷️<span>2%</span></div>
+          </article>
+        </div>
+        <div class="banner-dots" id="bannerDots" aria-hidden="true"><span class="active"></span><span></span></div>
+      </section>
+
+      <section class="category-strip" aria-label="Product categories">
+        <button class="category-pill active" data-category="all">All <span>14</span></button>
+        <button class="category-pill" data-category="breads">Breads <span>14</span></button>
+      </section>
+
+      <section class="catalogue-section">
+        <div class="catalogue-heading"><div><p class="eyebrow">WHOLESALE CATALOGUE</p><h2 id="catalogueTitle">All products</h2></div><span class="result-count" id="resultCount">14 products</span></div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        <p class="empty-search hidden" id="emptySearch">No products match your search.</p>
+      </section>
+    </main>
+
+    <aside class="live-box" aria-label="Active users status">
+      <span class="live-dot"></span><span><strong>Live Active Users</strong><small id="liveCount">Connecting…</small></span>
+    </aside>
+
+    <div class="floating-actions">
+      <a class="float-btn whatsapp-float" href="https://wa.me/919389765626" target="_blank" rel="noopener" aria-label="WhatsApp owner">☏</a>
+      <a class="float-btn call-float" href="tel:9389765626" aria-label="Call owner">☎</a>
+    </div>
+
+    <section class="bottom-order-panel" aria-label="Cart summary">
+      <div class="cart-summary">
+        <div class="summary-price"><small>Goods total</small><strong id="goodsTotal">₹0</strong></div>
+        <div class="summary-metrics"><span><strong id="boxCount">0</strong><small>Boxes</small></span><span><strong id="pieceCount">0</strong><small>Pieces</small></span></div>
+        <button id="viewCartButton" class="text-action">View Cart<br>Details</button>
+      </div>
+      <button id="orderNowButton" class="primary-btn">Order Now <span>→</span></button>
+      <button id="viewMoreButton" class="view-more-btn">View More <span>＋</span></button>
+    </section>
+  </div>
+
+  <section id="moreView" class="full-screen-view hidden" aria-label="More information">
+    <button class="return-home-btn" id="returnHomeButton">← Return to Home</button>
+    <div class="more-content">
+      <section class="info-hero"><img src="assets/images/logo/logo.svg" alt="ASHIQ TRADLINK logo"><p class="eyebrow">LOCAL WHOLESALE SUPPLY</p><h1>ASHIQ TRADLINK</h1><p>Your neighbourhood wholesale supply partner.</p></section>
+      <section class="info-card" id="more-contact"><p class="eyebrow">GET IN TOUCH</p><h2>Owner & Contact</h2><p><strong>Ashik Mansuri</strong></p><div class="contact-grid">
+        <a href="tel:9389765626">Call: 9389765626</a><a href="tel:8449708075">Secondary: 8449708075</a>
+        <a href="https://wa.me/919389765626" target="_blank" rel="noopener">WhatsApp: 9389765626</a><a href="https://t.me/9389765626" target="_blank" rel="noopener">Telegram: 9389765626</a>
+        <a href="mailto:ashikmansuri9389@gmail.com">ashikmansuri9389@gmail.com</a>
+      </div></section>
+      <section class="info-card" id="more-social"><p class="eyebrow">FOLLOW / CONNECT</p><h2>Social Links</h2><div class="contact-grid">
+        <a href="https://www.instagram.com/ashikmansuri_07/" target="_blank" rel="noopener">Owner Instagram: @ashikmansuri_07</a>
+        <a href="https://www.instagram.com/itskarankamal/" target="_blank" rel="noopener">Developer Instagram: @itskarankamal</a>
+        <a href="https://www.instagram.com/madman_6162/" target="_blank" rel="noopener">Developer Instagram: @madman_6162</a>
+        <a href="https://t.me/9870931288" target="_blank" rel="noopener">Developer Telegram: 9870931288</a>
+      </div><p class="muted small">Profile links are based on the handles supplied for this website.</p></section>
+      <section class="info-card delivery-card"><p class="eyebrow">DELIVERY RANGE</p><h2>Delivery Areas</h2><div class="compass">
+        <div class="compass-point north"><b>N</b><span>Usrahar tak</span></div><div class="compass-point west"><b>W</b><span>Etawah</span></div><div class="compass-center">AT</div><div class="compass-point east"><b>E</b><span>Baharlura</span></div><div class="compass-point south"><b>S</b><span>Bakewar</span></div><div class="compass-point northwest"><b>NW</b><span>Mashnai</span></div>
+      </div></section>
+      <section class="info-card" id="more-about"><p class="eyebrow">ABOUT THE WEBSITE</p><h2>About Site</h2><p>ASHIQ TRADLINK is a product catalogue for local shopkeepers to choose wholesale boxes, review quantities and totals, and prepare an order message for WhatsApp.</p><p>Minimum goods order: <strong>₹500</strong>. Delivery is calculated at <strong>₹4 per one-way kilometre</strong> from Mangupur. The customer checks the order and sends it through WhatsApp.</p></section>
+      <section class="info-card"><p class="eyebrow">WHAT WE DO</p><h2>Our Services & Locations</h2><p>Wholesale product selection, box-based ordering, order summary and local delivery coordination in the listed service areas.</p></section>
+      <section class="info-card" id="more-developer"><p class="eyebrow">WEBSITE CREATOR</p><h2>About Developer</h2><p><strong>This website is made by KARAN KAMAL</strong></p><p>To make more, contact:</p><div class="contact-grid">
+        <a href="tel:9870931288">Phone / WhatsApp: 9870931288</a><a href="tel:7534805520">Secondary: 7534805520</a>
+        <a href="mailto:kamalkaran939@gmail.com">kamalkaran939@gmail.com</a><a href="mailto:karankamalx@gmail.com">karankamalx@gmail.com</a>
+        <a href="https://www.instagram.com/itskarankamal/" target="_blank" rel="noopener">@itskarankamal</a><a href="https://www.instagram.com/madman_6162/" target="_blank" rel="noopener">@madman_6162</a>
+        <a href="https://t.me/9870931288" target="_blank" rel="noopener">Telegram: 9870931288</a>
+      </div></section>
+      <footer class="site-footer">© <span id="year"></span> ASHIQ TRADLINK · Made by KARAN KAMAL</footer>
+    </div>
+  </section>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><div><p class="eyebrow" id="modalEyebrow">YOUR ORDER</p><h2 id="modalTitle">Cart Details</h2></div><button class="icon-btn" id="closeModal" aria-label="Close dialog">×</button></div>
+      <div id="modalBody" class="modal-body"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
